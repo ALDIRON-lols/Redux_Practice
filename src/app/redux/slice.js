@@ -7,9 +7,7 @@ const {
 
 const initialState = {
   userApiData: [],
-  users: JSON.parse(localStorage.getItem("users"))
-    ? JSON.parse(localStorage.getItem("users"))
-    : [],
+  users: [],
 };
 
 export const fetchApiUsers = createAsyncThunk("fetchApiUser", async () => {
